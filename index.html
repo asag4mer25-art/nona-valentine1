@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Home Page</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1770298190010"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1770298190010">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-anim-header="" class="header">
+				<div class="header__container">
+					<!-- <include src="@components/layout/menu/menu.html" locals='{"active":"Home"}'></include> -->
+				</div>
+			</header>
+			<main class="page">
+				<div data-anim-index="" class="index index__container">
+					<!-- START -->
+					<section class="stage stage--start" id="startStage">
+						<button class="heart-btn" id="openBtn">
+							<div class="heart-btn__row">
+								<img class="heart-btn__img" src="./assets/img/start.jpg" alt="">
+								<div class="heart-btn__text">Click on Ass</div>
+							</div>
+						</button>
+					</section>
+					<!-- SCROLL SCENE -->
+					<section class="stage stage--scroll" id="scrollStage" aria-hidden="true">
+						<div class="fixed">
+							<h1 class="hint">Scroll down😉</h1>
+							<div class="envelope" id="env" style="--flap: 0;
+ --sealFade: 0;
+ --title: 0;
+ --p1: 0; --p2: 0; --p3: 0; --p4: 0; --p5: 0;">
+								<!-- BACK -->
+								<div class="env-glass env-glass--back"></div>
+								<!-- FLAP -->
+								<div class="env-flap"></div>
+								<div class="valentine-title">Valentine for:</div>
+								<!-- SHAFT -->
+								<div class="letter">
+									<div class="photos">
+										<img class="photo" src="./assets/img/p1.jpg" alt="">
+										<img class="photo" src="./assets/img/p2.png" alt="">
+										<img class="photo" src="./assets/img/p3.jpg" alt="">
+										<img class="photo" src="./assets/img/p4.jpg" alt="">
+										<img class="photo" src="./assets/img/main-pic.jpg" alt="">
+									</div>
+								</div>
+								<!-- FRONT -->
+								<div class="env-glass env-glass--front"></div>
+								<!-- HEART SEAL -->
+								<div class="seal" aria-hidden="true"></div>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</section>
+				</div>
+			</main>
+			<footer data-anim-footer="" class="footer">
+				<div class="footer__container"></div>
+			</footer>
+		</div>
+	</body>
+</html>
